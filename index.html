@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>The Grab Button Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="The Grab Button Builder">
+  <meta name="description" property="og:description" content="Build a grab button in minutes, without writing any code! Works for Blogger, Wordpress.com &amp; Wordpress.org, and Typepad.">
+  <meta property="og:url" content="http://codeitpretty.net/grab-button-builder">
+  <meta property="og:site_name" content="The Grab Button Builder">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://codeitpretty.net/grab-button-builder/images/grab-button-builder.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MMosley">
+  <meta name="twitter:title" content="The Grab Button Builder">
+  <meta name="twitter:description" content="Build a grab button in minutes, without writing any code! Works for Blogger, Wordpress.com &amp; Wordpress.org, and Typepad.">
+  <meta name="twitter:creator" content="@MMosley">
+  <meta name="twitter:image" content="http://codeitpretty.net/grab-button-builder/images/grab-button-builder.png">
+  <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed|Lobster+Two:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <script src="js/modernizr.custom.62673.js"></script>
+
+</head>
+
+<body>
+
+  <noscript>
+The grab button builder requires JavaScript to work. If you can turn on JavaScript in your browser, please do so and refresh the page. If you need help enabling JavaScript, check out <a href="http://enable-javascript.com/">http://enable-javascript.com</a>.
+</noscript>
+<header>
+  <h1>The Grab Button Builder</h1>
+    <!--[if lt IE 9]>
+<style>
+.container, .tagline, .instructions, footer, .ref { display: none; }
+.oldie { text-align: center; }
+</style>
+<p class="oldie">Sorry, this doesn't work on your browser. Please try Chrome, Safari, Firefox, or the latest version of Internet Explorer.</p>
+<p>Need help updating your browser? Visit <a href="http://outdatedbrowser.com/">http://outdatedbrowser.com</a></p>
+<![endif]-->
+<p class="tagline">Create an HTML grab button for your blog's sidebar, without writing any code!</p>
+<p class="ref">This button builder will give you the same modern HTML grab button you'd get if you used my <a href="http://www.codeitpretty.com/2012/08/make-html-grab-button-for-your-blog.html">tutorial on Code it Pretty</a>. The button works on Blogger, Wordpress.com, Wordpress.org, and Typepad blogs.</p>
+<p class="instructions">Before you get started, upload your button image to your favorite image host and copy the image's direct URL. Not sure how to get your image URL? <span class="tutorial-start">Open the image host tutorial for detailed instructions.</span></p>
+  <div class="tutorial">
+    <p>Click on your image host to see where you can find your image URL.</p>
+    <ul>
+      <li class="service">Photobucket</li>
+        <div class="nested">
+         <p> Under "Links to share this photo", click the "Direct" link. The link will automatically copy itself to your clipboard.</p>
+          <img src="images/photobucket-direct.gif" alt="photobucket animation" nopin="nopin">
+            <p> Paste that link into the "Image URL" field on this page.</p>
+            <p class="close">Close tutorial</p>
+        </div>
+      <li class="service">Picasa</li>
+      <div class="nested">
+        <p>Click on your image in your Picasa album to get to the full-size image page. Then, click the "Link to this Photo" link.</p>
+        <img src="images/picasa-direct.gif" alt="picasa animation" nopin="nopin">
+        <p>If the "Select Size" dropdown menu is showing, set it to "Original Size" (if the size menu isn't showing, don't worry). Then, click the checkbox next to "Image only (no link)". Copy the link in the "Embed Image" field and paste it into the "Image URL" field on this page.</p>
+          <p class="close">Close tutorial</p>
+      </div>
+      <li class="service">Wordpress</li>
+      <div class="nested">
+        <p>After you upload your image to your media library, click the "Edit" link beside its thumbnail. On the "Edit Media" page, copy the URL in the "File URL" field.</p>
+        <img src="images/wordpress-direct.png" alt="Wordpress image direct link" nopin="nopin">
+          <p>Paste that link into the "Image URL" field on this page.</p>
+          <p class="close">Close tutorial</p>
+          </div>
+      <li class="service">Other</li>
+      <div class="nested">
+        <p>Is your favorite image host missing from the list? No problem! You can still get a direct URL for your image.</p>
+        <p>Find the page in your album that shows you a full-sized version of your image. Check for link options or embed options. The direct URL will be in link format without any HTML or BBCode surrounding it. It should look something like this:</p> <p>http://www.example.com/username/image-name.png</p>
+        <p>If you can't find a direct link option, check your host's terms of service and make sure you are allowed to directly link to images. Flickr and some other image hosts don't allow direct links. If your host doesn't allow direct links, try Photobucket or Picasa.</p>
+        <p class="close">Close tutorial</p>
+          </div>
+    </ul>
+  </div>
+</header>
+
+<div class="container">
+<div class="builder block">
+  <h2>Setup</h2>
+  <div class="errors">
+    <p class="img-error">Something's missing from your image URL. Make sure to enter the complete URL, including http:// or https://</p>
+    <p class="blog-error">Something's missing from your blog URL. Make sure to enter the complete URL, including http:// or https://</p>
+    <p class="width-error">Please enter an image width.</p>
+    <p class="height-error">Please enter an image height.</p>
+  </div>
+  <p class="tagline">Fields marked with an asterisk (*) are required.</p>
+<form>
+  <label><span class="required">* </span>Image URL<input type="url" class="image-url" name="blog-url" placeholder="http://www.example.com/image.png" required="true"></input></label>
+  <label><span class="required">* </span>Blog URL<input type="url" class="blog-url" name="blog-url" placeholder="http://www.example.com" required="true"></input></label>
+  <label><span class="required">* </span>Blog Name<input type="text" class="blog-name" name ="blog-name" placeholder="your blog name here" required="true"></input></label>
+  <label><span class="required">* </span>Button Image Width<input type="number" class="img-width" name="img-width" required="true"></input>px</label>
+   <label><span class="required">* </span>Button Image Height<input type="number" class="img-height" name="img-height" required="true"></input>px</label>
+   <label>Make button open new window<input type="checkbox" name="targetblank" value="yes" id="yes"></input></label>
+  <p class="codebox-exp">Code Box Options</p>
+  <div class="color-options">
+    <p class="nocolor-explain">You can use <a href="http://www.color-hex.com/">hex color codes</a> or <a href="http://en.wikipedia.org/wiki/X11_color_names">CSS color names</a> to set your colors.</p>
+  <label>Code Box Border Color<input type="color" class="bordercolor" name="bordercolor" value="#DCDCDC"></input></label>
+    <label>Code Box Background Color<input type="color" class="bgcolor" name="bgcolor" value="#FFFFFF"></input></label>
+  <label>Code Box Text Color<input type="color" class="textcolor" name="textcolor" value="#000000"></input></label>
+     <label>Code Box Height<input type="number" class="box-height" name="box-height"></input>px</label>
+      </div>
+    <button>Submit</button>
+   <p class="narrow-explainer">Scroll down for your button preview and code.</p>
+</form>
+</div>
+
+  <div class="preview-render block">
+  <h2>Preview</h2>
+    <p class="preview-instruct tagline">Your button preview will appear here.</p>
+  <div class="preview-button">
+  </div>
+</div>
+
+<div class="result block">
+  <h2>Code</h2>
+  <p class="code-preamble tagline">Your grab button code will appear here.</p>
+  <div class="code-instruct">Copy this code and paste it into:
+    <ul>
+      <li>Blogger: a new HTML/JavaScript gadget.</li>
+      <li>Wordpress: a new Text widget.</li>
+      <li>Typepad: a new "Embed Your Own HTML" module.</li>
+    </ul></p>
+ <pre>
+ </pre>
+</div>
+
+</div>
+      </div>
+
+      <footer>
+        <ul class="share-buttons">
+	         <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcodeitpretty.net%2Fgrab-button-builder%2F" target="_blank">Share on Facebook</a></li>
+	         <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fcodeitpretty.net%2Fgrab-button-builder%2F&text=The%20Grab%20Button%20Builder: http%3A%2F%2Fcodeitpretty.net%2Fgrab-button-builder%2F&via=MMosley" target="_blank" title="Tweet">Share on Twitter</a></li>
+	         <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fcodeitpretty.net%2Fgrab-button-builder%2F" target="_blank" title="Share on Google+">Share on Google+</a></li>
+	         <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fcodeitpretty.net%2Fgrab-button-builder%2F&media=http://codeitpretty.net/grab-button-builder/images/grab-button-builder.png&description=Create%20an%20HTML%20grab%20button%20for%20your%20blog's%20sidebar%2C%20without%20writing%20any%20code!" target="_blank" title="Pin it">Pin It</a></li>
+	         <li><a href="mailto:?subject=The%20Grab%20Button%20Builder&body=Create%20an%20HTML%20grab%20button%20for%20your%20blog's%20sidebar%2C%20without%20writing%20any%20code!: http%3A%2F%2Fcodeitpretty.net%2Fgrab-button-builder%2F" target="_blank" title="Email">Share by Email</a></li>
+        </ul>
+        <p>The Grab Button Builder is a experiment by <a href="http://www.twitter.com/MMosley">Marie Mosley</a>.</p>
+      </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/min/index-ck.js"></script>
+  <script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(100746819);
+  (function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+  </script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100746819ns.gif" /></p></noscript>
+</body>
+
+</html>
