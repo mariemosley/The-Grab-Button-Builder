@@ -1,4 +1,4 @@
-The-Grab-Button-Builder
+The Grab Button Builder
 =======================
 
 source code for [The Grab Button Builder](http://codeitpretty.net/grab-button-builder). 
