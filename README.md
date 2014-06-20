@@ -7,4 +7,4 @@ The Grab Button Builder is a jQuery-based web app that generates grab buttons fo
 
 If you'd like to contribute, please open an issue first before submitting a pull request.
 
-You can get in touch with me on [Twitter](http://www.twitter.com/MMosley) 
+You can get in touch with me on [Twitter](http://www.twitter.com/MMosley) or [Google+](http://www.google.com/+MarieMosley)
