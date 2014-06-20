@@ -20,7 +20,7 @@ header {
   width: 50%;
   margin: 0 auto;
 }
-h1, .tagline,  h2 {
+h1, .tagline,  h2, .demo {
     @include textcenter;
   }
 
@@ -34,7 +34,9 @@ h1 {
 a:link, a:visited { color: $darkest; }
 a:hover, a:active { color: darken($dark, 10%); }
 
-.tutorial-start { text-decoration: underline; }
+.tutorial-start, .demo { text-decoration: underline; }
+
+.grab-button-demo { display: none; }
 
 .container {
   display: table;
