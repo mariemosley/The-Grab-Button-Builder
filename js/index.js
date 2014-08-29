@@ -83,7 +83,7 @@
 var coderesult = ('<div class="grab-button" style="width: ' + width + 'px; margin: 0 auto;">\n<img src="'+image+'" alt="grab button for '+ rawname +'" width="'+width+'" height="'+height+'">\n<div style="margin: 0;\npadding: 0;\nborder: 1px solid '+color+';\nbackground-color: '+bgcolor+';\ncolor: '+textcolor+';\nwidth: '+width+'px;\nheight: '+codeheight+'px;\noverflow: scroll;">\n&lt;div class="'+dashname+'-button" style="width: '+width+'px; margin: 0 auto;">\n&lt;a href="'+blog+'" rel="nofollow"' +target +'>\n&lt;img src="'+image+'" alt="'+rawname+'" width="'+width+'" height="'+height+'" />\n&lt;/a>\n&lt;/div>\n</div>\n</div>'
                     );
    $('.result pre').text(coderesult).addClass('show-code');
-   $('.preview-button').html(coderesult);
+   $('.preview-button').append(coderesult);
    $('.preview-instruct').hide();
    $('.code-preamble').hide();
    $('.code-instruct').show();
